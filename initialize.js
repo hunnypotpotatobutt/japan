@@ -12,6 +12,6 @@ for (var i = 0; i < touristAttractions.length; i++) {
     touristAttractionsTitles[i] = result.charAt(0).toUpperCase() + result.slice(1);
     
     document.getElementById("tourist attractions").innerHTML += '<br /><small id='+touristAttractions[i]+'>'+touristAttractionsTitles[i]+'</small>'+
-    '<a href=”'+window[touristAttractions[i]].map+'” target="_blank"><img src=”map.png”></a> ';
+    '<a href=”'+window[touristAttractions[i]].map+' target="_blank"><img src=”map.png”></a> ';
     console.log(window[touristAttractions[i]].map);
 }
